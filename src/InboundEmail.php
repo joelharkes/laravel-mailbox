@@ -152,7 +152,7 @@ class InboundEmail extends Model
             $usesSymfonyMailer = version_compare(app()->version(), '9.0.0', '>');
             if ($usesSymfonyMailer) {
                 $mailable->withSymfonyMessage(function (\Symfony\Component\Mime\Email $email) {
-                    $email->getHeaders()->addIdHeader('In-Reply-To', $this->id());
+                    $email->getHeaders()->addTextHeader('In-Reply-To', $this->id());
                 });
             } else {
                 $mailable->withSwiftMessage(function (\Swift_Message $message) {
