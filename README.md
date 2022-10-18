@@ -1,9 +1,6 @@
 # Laravel Mailbox 📬
 
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/beyondcode/laravel-mailbox.svg?style=flat-square)](https://packagist.org/packages/beyondcode/laravel-mailbox)
-[![Build Status](https://img.shields.io/travis/beyondcode/laravel-mailbox/master.svg?style=flat-square)](https://travis-ci.org/beyondcode/laravel-mailbox)
-[![Quality Score](https://img.shields.io/scrutinizer/g/beyondcode/laravel-mailbox.svg?style=flat-square)](https://scrutinizer-ci.com/g/beyondcode/laravel-mailbox)
-[![Total Downloads](https://img.shields.io/packagist/dt/beyondcode/laravel-mailbox.svg?style=flat-square)](https://packagist.org/packages/beyondcode/laravel-mailbox)
+This is a fork of [beyondcode/laravel-mailbox](https://github.com/beyondcode/laravel-mailbox) that supports Laravel 9+.
 
 Handle incoming emails in your Laravel application.
 
@@ -16,17 +13,12 @@ Mailbox::from('{username}@gmail.com', function (InboundEmail $email, $username) 
 });
 ```
 
-[![https://phppackagedevelopment.com](https://beyondco.de/courses/phppd.jpg)](https://phppackagedevelopment.com)
-
-If you want to learn how to create reusable PHP packages yourself, take a look at my upcoming [PHP Package Development](https://phppackagedevelopment.com) video course.
-
-
 ## Installation
 
 You can install the package via composer:
 
 ```bash
-composer require beyondcode/laravel-mailbox
+composer require joelharkes/laravel-mailbox
 ```
 
 ## Usage
